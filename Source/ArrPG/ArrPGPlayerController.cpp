@@ -35,8 +35,6 @@ void AArrPGPlayerController::SetupInputComponent()
 	// support touch devices 
 	InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AArrPGPlayerController::MoveToTouchLocation);
 	InputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AArrPGPlayerController::MoveToTouchLocation);
-
-	InputComponent->BindAction("ResetVR", IE_Pressed, this, &AArrPGPlayerController::OnResetVR);
 }
 
 void AArrPGPlayerController::MoveToMouseCursor()
